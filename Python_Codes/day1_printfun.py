@@ -5,3 +5,6 @@ print("Hello World!")
 print("""This is a string 
 that spans 
 multiple lines""")   # Here not using triple quotes will also give you an EOL error
+
+print("hello world \nhello world")
+print("hi "+"Praveen")
