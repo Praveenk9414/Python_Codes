@@ -50,7 +50,13 @@
 #         print("Here the decoded message -> ", decode(shift, message))
 #     ek_aur_bar = input("Do you want to continue Y/n ").lower()
 
+list_letter = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
 x = ['d','f','a','e']
 for letter in x:
-    if letter in 
+    max = 0
+    prev = 0
+    if letter in list_letter and max >= prev:
+        max = list_letter.index(letter)
+        prev = max
+print(list_letter[max])
