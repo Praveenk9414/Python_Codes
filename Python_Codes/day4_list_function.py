@@ -17,18 +17,8 @@ print(lst)
 # That single element can be any type of object, including iterables like lists, tuples, sets, or dictionaries.
 # However, the entire iterable is treated as a single element and added as-is.
 
-lst2 = [1, 2, 3]
-lst3 = [4, 5, 6]
 
-lst2.append(lst3)
-print(lst2)  # Output: [1, 2, 3, [4, 5, 6]]
 
-tup3 = (4, 5, 6)
-lst2.append(tup3)  # The tuple is added as a single element.
-print(lst2)  # Output: [1, 2, 3, [4, 5, 6], (4, 5, 6)]
-
-# Accessing the first element of the nested list
-print(lst2[3][0])  # Output: 4
 
 
 # Using list slicing to append and extend elements
@@ -47,6 +37,18 @@ print(lst)
 
 
 
+lst2 = [1, 2, 3]
+lst3 = [4, 5, 6]
+
+lst2.append(lst3)
+print(lst2)  # Output: [1, 2, 3, [4, 5, 6]]
+
+tup3 = (4, 5, 6)
+lst2.append(tup3)  # The tuple is added as a single element.
+print(lst2)  # Output: [1, 2, 3, [4, 5, 6], (4, 5, 6)]
+
+# Accessing the first element of the nested list
+print(lst2[3][0])  # Output: 4
 
 
 
@@ -99,5 +101,3 @@ list2 = [1,2,3,6,2,3,9,1,2,4]
 
 list2.sort()
 print(list2)
-
-list
